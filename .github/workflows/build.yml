@@ -1,20 +1,24 @@
 name: Build/release
+
 on: push
+
 jobs:
   release:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macos-latest, ubuntu-latest, windows-latest]
+        os: [macos-13, ubuntu-latest, windows-latest]
     permissions:
       contents: write
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v4
+
       - name: Install Node.js, NPM and Yarn
         uses: actions/setup-node@v4
         with:
           node-version: 18
+
       - name: Build/release Electron app
         uses: samuelmeuli/action-electron-builder@v1
         with:
