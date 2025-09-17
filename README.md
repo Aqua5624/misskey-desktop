@@ -2,10 +2,6 @@
 
 Unofficial desktop client made using electron
 
-# Screenshot
-
-![gambar](https://cdn.discordapp.com/attachments/1125286222194016266/1126087690782261319/image.png)
-
 # Supported OS
 
 - Linux
