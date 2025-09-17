@@ -16,7 +16,7 @@ function createWindow() {
     },
   });
 
-  mainWindow.loadURL('https://misskey.id');
+  mainWindow.loadURL('https://misskey.io');
 
   mainWindow.webContents.on('new-window', (event, url, frameName, disposition, options) => {
     event.preventDefault(); // Prevent opening the link in a new window
